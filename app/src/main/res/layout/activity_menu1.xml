@@ -8,4 +8,73 @@
     android:orientation="vertical"
     tools:context="calgordi.villagebattle.Menu1">
 
+
+    <LinearLayout
+        android:id="@+id/EspacioHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/InformacionPersona"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/IPersonaEspacioHorizontalIZQ"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ImagenPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            app:srcCompat="@mipmap/ic_launcher" />
+        <LinearLayout
+            android:id="@+id/InformacionPersona"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/InformacionPersona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Usuario"
+                    android:textAllCaps="true"
+                    android:textSize="30sp"
+                    android:textStyle="bold"/>
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/IPersonaEspacioHorizontalDER"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+    </LinearLayout>
+
 </LinearLayout>
