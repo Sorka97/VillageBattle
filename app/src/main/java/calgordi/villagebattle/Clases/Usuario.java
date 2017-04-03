@@ -10,7 +10,7 @@ public class Usuario {
     private int moneyDiamond;
     private int experiencia;
 
-    //Constructor
+    //Constructor.
     public Usuario(String nombreUsuario, String contrasena, String correo, int dineroOro, int dineroDiamante, int exp){
         userName = nombreUsuario;
         password = contrasena;
