@@ -1,6 +1,7 @@
 package calgordi.villagebattle.Clases;
 
 import android.media.Image;
+import android.media.MediaPlayer;
 
 public class Arma {
     private String nombre;
@@ -14,8 +15,9 @@ public class Arma {
     private String habilidadEspecial;
 
     private Image bala;
+    private MediaPlayer sonidoBala;
 
-    public Arma (String name, String type, int level, int experience, float damage, float attackSpeed, int ammo, float reload, String specialAbility, Image bullet){
+    public Arma (String name, String type, int level, int experience, float damage, float attackSpeed, int ammo, float reload, String specialAbility, Image bullet, MediaPlayer soundBala){
         nombre = name;
         tipo = type;
         nivel = level;
@@ -26,6 +28,7 @@ public class Arma {
         tiempoRecarga = reload;
         habilidadEspecial = specialAbility;
         bala = bullet;
+        sonidoBala = soundBala;
     }
 
     public String getNombre (){return nombre;}
