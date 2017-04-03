@@ -1,4 +1,4 @@
-package calgordi.villagebattle;
+package calgordi.villagebattle.Clases;
 
 import android.media.Image;
 import android.media.MediaPlayer;

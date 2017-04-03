@@ -1,4 +1,4 @@
-package calgordi.villagebattle;
+package calgordi.villagebattle.Clases;
 
 public class Usuario {
     //Propiedades
