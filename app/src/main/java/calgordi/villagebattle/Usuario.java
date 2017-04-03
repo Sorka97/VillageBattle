@@ -58,7 +58,9 @@ public class Usuario {
     }
 
 // Metodos add - remove
-
+    public void addExperiencia (int experienciaAAnadir){
+        experiencia + = experienciaAAnadir;
+    }
     public void addMoneyGold (int dineroOroAAnadir) {
         moneyGold += dineroOroAAnadir;
     }
