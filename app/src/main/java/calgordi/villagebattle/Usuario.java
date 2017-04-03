@@ -1,9 +1,5 @@
 package calgordi.villagebattle;
 
-/**
- * Created by sergi_000 on 03/04/2017.
- */
-
 public class Usuario {
     //Propiedades
 
@@ -59,7 +55,7 @@ public class Usuario {
 
 // Metodos add - remove
     public void addExperiencia (int experienciaAAnadir){
-        experiencia + = experienciaAAnadir;
+        experiencia += experienciaAAnadir;
     }
     public void addMoneyGold (int dineroOroAAnadir) {
         moneyGold += dineroOroAAnadir;
