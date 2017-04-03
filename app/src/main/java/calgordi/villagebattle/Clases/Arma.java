@@ -10,6 +10,7 @@ public class Arma {
     private int experiencia;
     private float dano;
     private float velocidadAtaque;
+    private float rango;
     private int municionCargador; // Si es de type melee este dato no importara
     private float tiempoRecarga;
     private String habilidadEspecial;
@@ -17,13 +18,14 @@ public class Arma {
     private Image bala;
     private MediaPlayer sonidoBala;
 
-    public Arma (String name, String type, int level, int experience, float damage, float attackSpeed, int ammo, float reload, String specialAbility, Image bullet, MediaPlayer soundBala){
+    public Arma (String name, String type, int level, int experience, float damage, float attackSpeed,float range, int ammo, float reload, String specialAbility, Image bullet, MediaPlayer soundBala){
         nombre = name;
         tipo = type;
         nivel = level;
         experiencia = experience;
         dano = damage;
         velocidadAtaque = attackSpeed;
+        rango = range;
         municionCargador = ammo;
         tiempoRecarga = reload;
         habilidadEspecial = specialAbility;
