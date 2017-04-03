@@ -1,6 +1,7 @@
 package calgordi.villagebattle;
 
 import android.media.Image;
+import android.media.MediaPlayer;
 
 public class Personaje {
     // Propiedades
@@ -37,8 +38,12 @@ public class Personaje {
     private Image abajoAtacando1;
     private Image abajoAtacando2;
 
+    //Sonido
+    private MediaPlayer sonidoPersonaje;
+    private MediaPlayer sonidoPasos;
+
     //Constructor
-    public Personaje (String name, int life, float velocity, float fieldOfView, String specialAbility, Image icon ,Image upQuieto, Image rightQuieto, Image leftQuieto, Image downQuieto, Image upPasoIzquierdo, Image rightPasoIzquierdo, Image leftPasoIzquierdo, Image downPasoIzquierdo, Image upPasoDerecho , Image rightPasoDerecho, Image leftPasoDerecho, Image downPasoDerecho, Image upAtacando1 , Image rightAtacando1 , Image leftAtacando1, Image downAtacando1, Image upAtacando2, Image rightAtacando2, Image leftAtacando2, Image downAtacando2){
+    public Personaje (String name, int life, float velocity, float fieldOfView, String specialAbility, Image icon ,Image upQuieto, Image rightQuieto, Image leftQuieto, Image downQuieto, Image upPasoIzquierdo, Image rightPasoIzquierdo, Image leftPasoIzquierdo, Image downPasoIzquierdo, Image upPasoDerecho , Image rightPasoDerecho, Image leftPasoDerecho, Image downPasoDerecho, Image upAtacando1 , Image rightAtacando1 , Image leftAtacando1, Image downAtacando1, Image upAtacando2, Image rightAtacando2, Image leftAtacando2, Image downAtacando2, MediaPlayer soundPersonaje, MediaPlayer soundPasos){
 
         nombre = name;
         vida = life;
@@ -72,6 +77,9 @@ public class Personaje {
         abajoAtacando2 = downAtacando2;
         derechaAtacando2 = rightAtacando2;
         izquierdaAtacando2 = leftAtacando2;
+
+        sonidoPersonaje = soundPersonaje;
+        sonidoPasos = soundPasos;
 
     }
 //Metodos set - get
