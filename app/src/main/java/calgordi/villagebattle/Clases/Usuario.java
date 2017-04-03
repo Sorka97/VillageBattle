@@ -6,12 +6,18 @@ public class Usuario {
     private String userName;
     private String password;
     private String email;
+    private int moneyGold;
+    private int moneyDiamond;
+    private int experiencia;
 
-    //Constructor
-    public Usuario(String nombreUsuario, String contrasena, String correo){
+    //Constructor.
+    public Usuario(String nombreUsuario, String contrasena, String correo, int dineroOro, int dineroDiamante, int exp){
         userName = nombreUsuario;
         password = contrasena;
         email = correo;
+        moneyGold = dineroOro;
+        moneyDiamond = dineroDiamante;
+        experiencia = exp;
     }
 
 //metodos get - set
@@ -34,5 +40,33 @@ public class Usuario {
     public String getEmail () {
         return email;
     }
+    public void setMoneyGold (int dineroOro){
+        moneyGold = dineroOro;
+    }
+    public int getMoneyGold () {
+        return moneyGold;
+    }
+    public void setMoneyDiamond (int dineroDiamante) {
+        moneyDiamond = dineroDiamante;
+    }
+    public int getMoneyDiamond (){
+        return moneyDiamond;
+    }
 
+// Metodos add - remove
+    public void addExperiencia (int experienciaAAnadir){
+        experiencia += experienciaAAnadir;
+    }
+    public void addMoneyGold (int dineroOroAAnadir) {
+        moneyGold += dineroOroAAnadir;
+    }
+    public void removeMoneyGold (int dineroOroAQuitar){
+        moneyGold -= dineroOroAQuitar;
+    }
+    public void addMoneyDiamond (int dineroDiamanteAAnadir){
+        moneyDiamond += dineroDiamanteAAnadir;
+    }
+    public void removeMoneyDiamond (int dineroDiamanteAQuitar){
+        moneyDiamond -= dineroDiamanteAQuitar;
+    }
 }
